@@ -1,0 +1,142 @@
+body {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  background-color: black;
+  color: rgb(251, 3, 3);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url(https://static.wikia.nocookie.net/undertale-dont-forget/images/a/a6/Border_newhome.png/revision/latest?cb=20230105132309);
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: 100% auto; 
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+.logo {
+  font-size: xx-large;
+  height: auto;
+  margin: 0 auto;
+  transform: rotate(-15deg) translate(17%, -10%) translateY(30px);
+  text-shadow: 2px 2px 0px black, 4px 4px 0px black, 6px 6px 0px black;
+  color: gray;
+}
+
+.box {
+  background-color: #000000;
+  color: #fff;
+  border: 2px solid #e01111;
+  padding: 20px;
+  margin: 20px auto 10px auto;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  line-height: 3;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  border-color: #e26767;
+}
+
+a:hover {
+    color: #f42f49;
+    text-decoration: underline;
+}
+
+details {
+    background-color: #111;
+    color: #fff;
+    border: 2px solid #e01145;
+    padding: 20px;
+    margin: 20px auto 10px auto;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+body.asgore-theme {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, #4d0000, #ff2e2e, #6b0000, #110000);
+  background-size: 500% 500%;
+  animation: asgoreFire 8s ease-in-out infinite;
+  color: #ffeedd;
+  position: relative;
+  overflow-x: hidden;
+    background-attachment: fixed;
+
+}
+
+@keyframes asgoreFire {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.asgore-firelayer {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 80, 0, 0.05) 20%, transparent 70%);
+  animation: pulseGlow 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.05; }
+  50% { transform: translate(-2%, 2%) scale(1.03); opacity: 0.1; }
+}
+
+@keyframes driftCinders {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-300px, 300px); }
+}
+
+.asgore-cinders {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cinder {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 120, 0, 0.8);
+  border-radius: 50%;
+  animation: floatCinder 10s linear infinite;
+  box-shadow: 0 0 6px rgba(255, 80, 0, 0.8);
+}
+
+.cinder:nth-child(1) { top: 100%; left: 10%; animation-delay: 0s; }
+.cinder:nth-child(2) { top: 100%; left: 30%; animation-delay: 1s; }
+.cinder:nth-child(3) { top: 100%; left: 50%; animation-delay: 1s; }
+.cinder:nth-child(4) { top: 100%; left: 70%; animation-delay: 1s; }
+.cinder:nth-child(5) { top: 100%; left: 85%; animation-delay: 1s; }
+.cinder:nth-child(6) { top: 100%; left: 40%; animation-delay: 1s; }
+.cinder:nth-child(7) { top: 100%; left: 60%; animation-delay: 1s; }
+.cinder:nth-child(8) { top: 100%; left: 20%; animation-delay: 2.5s; }
+
+@keyframes floatCinder {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.5);
+    opacity: 0;
+  }
+}
+

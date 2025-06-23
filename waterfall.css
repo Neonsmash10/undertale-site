@@ -1,0 +1,48 @@
+body {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  background-color: black;
+  color: rgb(251, 3, 3);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url(https://static.wikia.nocookie.net/undertale-dont-forget/images/0/01/Border_waterfall.png/revision/latest?cb=20230105132309);
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: 100% auto; 
+  overflow-x: hidden;
+  background-attachment: fixed;
+
+}
+.logo {
+  font-size: xx-large;
+  height: auto;
+  margin: 0 auto;
+  transform: rotate(-15deg) translate(17%, -10%) translateY(30px);
+  text-shadow: 2px 2px 0px black, 4px 4px 0px black, 6px 6px 0px black;
+}
+
+.box {
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #bde8fc;
+  padding: 20px;
+  margin: 20px auto 10px auto;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  line-height: 3;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  border-color: #0033ff;
+}
+
+a:hover {
+    color: #0055ff;
+    text-decoration: underline;
+}
+
